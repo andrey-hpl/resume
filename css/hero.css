@@ -1,0 +1,107 @@
+/* Fill the first viewport, accounting for the sticky header. */
+.hero--portrait {
+  min-height: calc(100vh - var(--header-height));
+  min-height: calc(100dvh - var(--header-height));
+}
+.hero--portrait .hero-visual {
+  width: min(100%, 390px);
+  max-width: none;
+  height: 520px;
+  margin: 0;
+  justify-self: center;
+}
+.hero--portrait .portrait-frame {
+  position: relative;
+  inset: auto;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  mask-image: none;
+  background: #1a1d24;
+}
+.hero--portrait .portrait-frame::after {
+  content: none;
+}
+.hero--portrait .portrait {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  object-fit: cover;
+  object-position: center top;
+  transform: none;
+  filter: grayscale(1) brightness(0.96) contrast(1.04);
+  opacity: 1;
+  mask-image: none;
+}
+@media (max-width: 1200px) {
+  .hero--portrait .hero-visual {
+    width: min(100%, 340px);
+    height: 490px;
+  }
+}
+@media (max-width: 820px) {
+  .hero--portrait .hero-visual {
+    width: min(100%, 280px);
+    height: 440px;
+  }
+}
+@media (max-width: 600px) {
+  .hero--portrait {
+    grid-template-columns: minmax(0, 1fr) clamp(112px, 32vw, 164px);
+    column-gap: 16px;
+    row-gap: 0;
+    padding-bottom: 32px;
+    align-items: start;
+    align-content: center;
+  }
+  .hero--portrait .hero-copy {
+    display: contents;
+  }
+  .hero--portrait .eyebrow {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    margin-bottom: 22px;
+  }
+  .hero--portrait .greeting {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: end;
+    font-size: 16px;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  .hero--portrait h1 {
+    grid-column: 1;
+    grid-row: 3;
+    align-self: start;
+    margin: 0;
+    font-size: clamp(36px, 10.5vw, 58px);
+    letter-spacing: -2px;
+    line-height: 1.08;
+  }
+  .hero--portrait .hero-visual {
+    grid-column: 2;
+    grid-row: 2 / 4;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    align-self: center;
+  }
+  .hero--portrait .hero-role {
+    grid-column: 1 / -1;
+    grid-row: 4;
+    margin-top: 24px;
+  }
+  .hero--portrait .hero-description {
+    grid-column: 1 / -1;
+    grid-row: 5;
+  }
+  .hero--portrait .hero-actions {
+    grid-column: 1 / -1;
+    grid-row: 6;
+  }
+  .hero--portrait .hero-meta {
+    grid-column: 1 / -1;
+    grid-row: 7;
+  }
+}

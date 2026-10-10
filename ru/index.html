@@ -1,0 +1,1217 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#070B14" />
+    <meta
+      name="description"
+      content="Senior Java Backend Developer. 5+ лет опыта: Java, Spring Boot, Kafka, PostgreSQL, Kubernetes. Высоконагруженные системы в здравоохранении и банковской сфере."
+    />
+    <meta
+      property="og:title"
+      content="Андрей Хлыпало — Senior Java Backend Developer"
+    />
+    <meta
+      property="og:description"
+      content="Senior Java Backend Developer. 5+ лет опыта: Java, Spring Boot, Kafka, PostgreSQL, Kubernetes. Высоконагруженные системы в здравоохранении и банковской сфере."
+    />
+    <meta property="og:type" content="profile" />
+    <meta property="og:locale" content="ru_RU" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="alternate" hreflang="ru" href="../ru/index.html" />
+    <link rel="alternate" hreflang="en" href="../en/index.html" />
+    <title>Андрей Хлыпало — Senior Java Backend Developer</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/hero.css" />
+    <script src="../js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">К содержимому</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="Андрей Хлыпало"
+          ><span class="brand-symbol" aria-hidden="true"
+            ><svg
+              width="26"
+              height="26"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-15-2 18"></path></svg></span
+          ><span
+            >Андрей<span class="brand-last"> Хлыпало</span
+            ><span class="brand-dot">.</span></span
+          ></a
+        >
+        <nav class="desktop-nav" aria-label="Основная навигация">
+          <a href="#home" data-nav="home" class="active" aria-current="location"
+            >Главная</a
+          ><a href="#about" data-nav="about">Обо мне</a
+          ><a href="#experience" data-nav="experience">Опыт</a
+          ><a href="#projects" data-nav="projects">Проекты</a
+          ><a href="#contact" data-nav="contact">Контакты</a>
+        </nav>
+        <div class="header-actions">
+          <div class="language-switch" aria-label="Язык сайта">
+            <a
+              href="../ru/index.html"
+              data-language="ru"
+              lang="ru"
+              aria-label="Русский"
+              aria-current="page"
+              >RU</a
+            ><span aria-hidden="true">/</span
+            ><a
+              href="../en/index.html"
+              data-language="en"
+              lang="en"
+              aria-label="English"
+              >EN</a
+            >
+          </div>
+          <a
+            class="button button-small header-cv"
+            href="../andrey-khlypalo-cv-ru.pdf"
+            download
+            title="Резюме в PDF"
+            ><svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M12 3v12m-5-5 5 5 5-5M5 17v4h14v-4"></path></svg
+            >Скачать резюме</a
+          ><button
+            class="menu-toggle"
+            id="menu-open"
+            aria-label="Открыть меню"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+          >
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <dialog id="mobile-menu" aria-label="Открыть меню">
+      <div class="mobile-menu-head">
+        <span class="mono">MENU / RU</span
+        ><button id="menu-close" aria-label="Закрыть меню">×</button>
+      </div>
+      <nav aria-label="Мобильная навигация">
+        <a href="#home"
+          ><span class="mono">01</span>Главная<svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M7 17 17 7M7 7h10v10"></path></svg></a
+        ><a href="#about"
+          ><span class="mono">02</span>Обо мне<svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M7 17 17 7M7 7h10v10"></path></svg></a
+        ><a href="#experience"
+          ><span class="mono">03</span>Опыт<svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M7 17 17 7M7 7h10v10"></path></svg></a
+        ><a href="#projects"
+          ><span class="mono">04</span>Проекты<svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M7 17 17 7M7 7h10v10"></path></svg></a
+        ><a href="#contact"
+          ><span class="mono">05</span>Контакты<svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M7 17 17 7M7 7h10v10"></path></svg
+        ></a>
+      </nav>
+      <a
+        class="button button-primary"
+        href="../andrey-khlypalo-cv-ru.pdf"
+        download
+        ><svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M12 3v12m-5-5 5 5 5-5M5 17v4h14v-4"></path></svg
+        >Скачать резюме</a
+      >
+    </dialog>
+    <main id="main">
+      <section id="home" class="hero hero--portrait container" data-section>
+        <div class="hero-copy">
+          <div class="eyebrow hero-enter">
+            <span class="status-dot"></span>JAVA · АРХИТЕКТУРА · HIGHLOAD
+          </div>
+          <p class="greeting hero-enter">
+            Привет, я<span class="wave" aria-hidden="true">✳</span>
+          </p>
+          <h1 class="hero-enter">
+            Андрей<br /><span>Хлыпало</span><span class="name-period">.</span>
+          </h1>
+          <p class="hero-role hero-enter">
+            Senior Java<br class="role-break" />
+            Backend Developer
+          </p>
+          <p class="hero-description hero-enter">
+            Создаю надёжный backend для систем, которыми пользуются миллионы
+            людей.
+          </p>
+          <div class="hero-actions hero-enter">
+            <a
+              class="button button-primary"
+              href="https://t.me/andreyhpl"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Связаться со мной<svg
+                width="19"
+                height="19"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M7 17 17 7M7 7h10v10"></path></svg></a
+            ><a class="button button-secondary" href="#projects"
+              ><svg
+                width="17"
+                height="17"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z"
+                ></path></svg
+              >Мои проекты</a
+            >
+          </div>
+          <div class="hero-meta hero-enter">
+            <div class="socials">
+              <a
+                href="https://github.com/andrey-hpl"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                ><svg
+                  width="19"
+                  height="19"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M9 19c-4.3 1.3-4.3-2.2-6-2.5M15 22v-3.4c.1-1-.3-1.7-.8-2.1 2.7-.3 5.5-1.3 5.5-6a4.7 4.7 0 0 0-1.3-3.3c.1-.3.6-1.6-.1-3.3 0 0-1-.3-3.4 1.3a11.7 11.7 0 0 0-6.2 0C6.3 3.6 5.3 4 5.3 4c-.7 1.7-.2 3-.1 3.3a4.7 4.7 0 0 0-1.3 3.3c0 4.7 2.8 5.7 5.5 6-.4.4-.8 1-.8 2.1V22"
+                  ></path></svg></a
+              ><a
+                href="https://t.me/andreyhpl"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Telegram"
+                ><svg
+                  width="19"
+                  height="19"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="m22 3-4 18-7-6-4 4 1-7L22 3ZM8 12 2 9l20-6M8 12l10-6-7 9"
+                  ></path></svg></a
+              ><a href="mailto:andreyhpl@yandex.ru" aria-label="Почта"
+                ><svg
+                  width="19"
+                  height="19"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M3 5h18v14H3zM3 5l9 8 9-8"></path></svg
+              ></a>
+            </div>
+            <span class="meta-divider"></span
+            ><span class="location"
+              ><svg
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0ZM15 10a3 3 0 1 1-6 0 3 3 0 0 1 6 0"
+                ></path></svg
+              >Тбилиси, Грузия</span
+            >
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="portrait-frame">
+            <img
+              src="../assets/images/andrey-portrait-1024.webp"
+              srcset="
+                ../assets/images/andrey-portrait-450.webp   450w,
+                ../assets/images/andrey-portrait-650.webp   650w,
+                ../assets/images/andrey-portrait-1024.webp 1024w
+              "
+              alt="Портрет Андрея Хлыпало"
+              sizes="(max-width: 600px) 32vw, (max-width: 820px) 280px, (max-width: 1200px) 340px, 390px"
+              loading="eager"
+              fetchpriority="high"
+              decoding="async"
+              width="1024"
+              height="1536"
+              class="portrait"
+            />
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <div class="stats-strip">
+          <div class="stat">
+            <span class="stat-icon stat-icon-0" aria-hidden="true"
+              ><svg
+                width="23"
+                height="23"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-15-2 18"></path></svg
+            ></span>
+            <div>
+              <strong>5+</strong>
+              <p>лет опыта</p>
+              <span>в backend-разработке</span>
+            </div>
+          </div>
+          <div class="stat">
+            <span class="stat-icon stat-icon-1" aria-hidden="true"
+              ><svg
+                width="23"
+                height="23"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M16 3a4 4 0 0 1 0 8m6 10v-2a4 4 0 0 0-3-3.87M13 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0"
+                ></path></svg
+            ></span>
+            <div>
+              <strong>Более 20 млн</strong>
+              <p>пользователей</p>
+              <span>разработанных мною продуктов</span>
+            </div>
+          </div>
+          <div class="stat">
+            <span class="stat-icon stat-icon-2" aria-hidden="true"
+              ><svg
+                width="23"
+                height="23"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M2 12h4l3-9 6 18 3-9h4"></path></svg
+            ></span>
+            <div>
+              <strong>2,4 → 0,9 с</strong>
+              <p>задержка p95</p>
+              <span>I/O-bound эндпоинта</span>
+            </div>
+          </div>
+          <div class="stat">
+            <span class="stat-icon stat-icon-3" aria-hidden="true"
+              ><svg
+                width="23"
+                height="23"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="m13 2-9 12h7l-1 8 10-12h-7l1-8Z"></path></svg
+            ></span>
+            <div>
+              <strong>15 мин</strong>
+              <p>вместо 2 часов</p>
+              <span>время релиза</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="section container about-section" id="about" data-section>
+        <div class="about-copy reveal">
+          <p class="eyebrow">01 / ОБО МНЕ</p>
+          <h2 class="multiline">От бизнес-задачи до стабильного production.</h2>
+          <p>
+            Более пяти лет разрабатываю backend, последние три с лишним года — в
+            здравоохранении и банковской сфере. Проектирую микросервисы, ускоряю
+            работу с данными и обеспечиваю надёжную обработку событий.
+          </p>
+          <p class="about-note">
+            Участвую в архитектурных решениях, провожу code review и помогаю
+            junior-разработчикам расти.
+          </p>
+          <a
+            href="https://github.com/andrey-hpl"
+            class="text-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><svg
+              width="17"
+              height="17"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M9 19c-4.3 1.3-4.3-2.2-6-2.5M15 22v-3.4c.1-1-.3-1.7-.8-2.1 2.7-.3 5.5-1.3 5.5-6a4.7 4.7 0 0 0-1.3-3.3c.1-.3.6-1.6-.1-3.3 0 0-1-.3-3.4 1.3a11.7 11.7 0 0 0-6.2 0C6.3 3.6 5.3 4 5.3 4c-.7 1.7-.2 3-.1 3.3a4.7 4.7 0 0 0-1.3 3.3c0 4.7 2.8 5.7 5.5 6-.4.4-.8 1-.8 2.1V22"
+              ></path>
+            </svg>
+            GitHub
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M7 17 17 7M7 7h10v10"></path></svg
+          ></a>
+        </div>
+        <div class="skills reveal" id="skills">
+          <div class="skills-heading">
+            <h3>Мой инструментарий</h3>
+            <span class="mono">STACK / 2026</span>
+          </div>
+          <div class="skills-grid">
+            <div class="skill">
+              <span class="skill-icon skill-color-0"
+                ><svg
+                  width="23"
+                  height="23"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-15-2 18"></path></svg
+              ></span>
+              <div>
+                <h4>Языки</h4>
+                <p>Java 11 / 17 / 21 · Kotlin · SQL</p>
+              </div>
+            </div>
+            <div class="skill">
+              <span class="skill-icon skill-color-1"
+                ><svg
+                  width="23"
+                  height="23"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="m12 3 10 6-10 6L2 9l10-6Zm-10 12 10 6 10-6M2 12l10 6 10-6"
+                  ></path></svg
+              ></span>
+              <div>
+                <h4>Backend</h4>
+                <p>Spring Boot · JPA · Hibernate · JDBC · REST API</p>
+              </div>
+            </div>
+            <div class="skill">
+              <span class="skill-icon skill-color-2"
+                ><svg
+                  width="23"
+                  height="23"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M20 6c0 2-3.6 4-8 4S4 8 4 6s3.6-4 8-4 8 2 8 4ZM4 6v12c0 2 3.6 4 8 4s8-2 8-4V6M4 12c0 2 3.6 4 8 4s8-2 8-4"
+                  ></path></svg
+              ></span>
+              <div>
+                <h4>Данные</h4>
+                <p>PostgreSQL · Redis · Elasticsearch</p>
+              </div>
+            </div>
+            <div class="skill">
+              <span class="skill-icon skill-color-3"
+                ><svg
+                  width="23"
+                  height="23"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M9 2h6v6H9zM2 16h6v6H2zm14 0h6v6h-6zM12 8v4M5 16v-4h14v4"
+                  ></path></svg
+              ></span>
+              <div>
+                <h4>События и интеграции</h4>
+                <p>Kafka · RabbitMQ · Outbox · Saga</p>
+              </div>
+            </div>
+            <div class="skill">
+              <span class="skill-icon skill-color-4"
+                ><svg
+                  width="23"
+                  height="23"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M3 3h18v7H3zM3 14h18v7H3zM7 6.5h.01M7 17.5h.01"
+                  ></path></svg
+              ></span>
+              <div>
+                <h4>Инфраструктура</h4>
+                <p>Docker · Kubernetes · Helm · GitLab CI/CD</p>
+              </div>
+            </div>
+            <div class="skill">
+              <span class="skill-icon skill-color-5"
+                ><svg
+                  width="23"
+                  height="23"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M2 12h4l3-9 6 18 3-9h4"></path></svg
+              ></span>
+              <div>
+                <h4>Качество и наблюдаемость</h4>
+                <p>JUnit 5 · Testcontainers · Prometheus · Grafana</p>
+              </div>
+            </div>
+          </div>
+          <div class="skills-foot">
+            <span class="small-dot"></span
+            ><span
+              >Transactional Outbox · Saga · Idempotency · Zero-downtime
+              deploy</span
+            >
+          </div>
+        </div>
+      </section>
+      <section class="section experience-section" id="experience" data-section>
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow">02 / ОПЫТ</p>
+              <h2>Опыт работы</h2>
+            </div>
+          </div>
+          <div class="timeline">
+            <article class="experience-row reveal">
+              <div class="experience-date">
+                <span class="timeline-node"></span
+                ><span>Июль 2024 — настоящее время</span
+                ><span class="mono experience-number">01</span>
+              </div>
+              <div class="experience-main">
+                <div class="company-heading">
+                  <div>
+                    <h3>Облачные технологии</h3>
+                    <p class="job-role">Senior Java Backend Developer</p>
+                  </div>
+                  <span class="job-domain">Здравоохранение · ЕМИАС</span>
+                </div>
+                <div class="experience-description">
+                  <div class="experience-preview">
+                    <p>
+                      Проект: ЕМИАС — цифровая платформа здравоохранения, 18 млн
+                      пользователей и более 1 000 учреждений.
+                    </p>
+                    <p>
+                      Зона ответственности: backend-микросервисы, архитектурные
+                      решения, code review и менторинг двух
+                      junior-разработчиков. Команда: 5 backend-разработчиков, 4
+                      frontend-разработчика, QA и DevOps.
+                    </p>
+                  </div>
+                  <details class="experience-details">
+                    <summary>
+                      <span class="details-show">Подробнее</span
+                      ><span class="details-hide">Свернуть</span
+                      ><svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M12 5v14M5 12h14"></path>
+                      </svg>
+                    </summary>
+                    <div class="experience-detail-content">
+                      <h4>Надёжность и observability</h4>
+                      <ul class="result-list">
+                        <li>
+                          Спроектировал и защитил на архитектурных ревью решения
+                          для микросервисов: Transactional Outbox, exactly-once
+                          Kafka и кэширование. Настроил health-checks, метрики
+                          Prometheus/Grafana и SLI-алерты по latency, error rate
+                          и consumer lag. Участвовал в разборе инцидентов и
+                          снижении MTTR.
+                        </li>
+                        <li>
+                          Внедрил exactly-once обработку критичных событий в
+                          Kafka: Transactional Outbox, idempotent producer,
+                          транзакции, acks=all, retry, DLQ и идемпотентные
+                          потребители с дедупликацией по ID. Дубли
+                          контролировались метриками.
+                        </li>
+                      </ul>
+                      <h4>Оптимизация производительности</h4>
+                      <ul class="result-list">
+                        <li>
+                          Перевёл I/O-bound сбор данных из внешних источников
+                          (ЕРП, ЕРЗЛ) на Java 21 Virtual Threads: p95 latency
+                          эндпоинта снизился с 2,4 до 0,9 с при 30 параллельных
+                          запросах. Результат подтверждён нагрузочным тестом.
+                        </li>
+                        <li>
+                          Снизил p95 latency read-endpoint’ов с 120 до 45 мс и
+                          сократил обращения к PostgreSQL на 60% за счёт
+                          кэширования справочников в Redis. Результат
+                          подтверждён метриками Prometheus/Grafana за 30 дней.
+                        </li>
+                        <li>
+                          Ускорил поиск по Elasticsearch на 50 млн документов:
+                          p95 с 820 до 210 мс, агрегации — с 11 до 1,9 с.
+                        </li>
+                        <li>
+                          Оптимизировал PostgreSQL-запросы: p95 снизился с 380
+                          до 210 мс после устранения N+1 и добавления B-tree
+                          индексов. Результат проверен через EXPLAIN ANALYZE.
+                        </li>
+                      </ul>
+                      <h4>CI/CD и деплой</h4>
+                      <ul class="result-list">
+                        <li>
+                          Стандартизировал деплой совместно с DevOps: написал
+                          Helm-чарты, настроил liveness/readiness probes и
+                          CI/CD-пайплайны в GitLab. Время релиза сократилось с 2
+                          часов до 15 минут, создания нового сервиса — с 1 дня
+                          до 40 минут, rollback — с 20 до 3 минут.
+                        </li>
+                      </ul>
+                      <p class="experience-stack">
+                        <strong>Стек:</strong> Java 17/21, Spring Boot, Spring
+                        Data JPA, PostgreSQL, Redis, Elasticsearch, Apache
+                        Kafka, RabbitMQ, Docker, Kubernetes, Helm, Prometheus,
+                        Grafana, EFK, GitLab CI/CD.
+                      </p>
+                    </div>
+                  </details>
+                </div>
+                <div class="tags">
+                  <span>Java 21</span><span>Spring Boot</span><span>Kafka</span
+                  ><span>Kubernetes</span>
+                </div>
+              </div>
+            </article>
+            <article class="experience-row reveal">
+              <div class="experience-date">
+                <span class="timeline-node"></span
+                ><span>Январь 2023 — июль 2024</span
+                ><span class="mono experience-number">02</span>
+              </div>
+              <div class="experience-main">
+                <div class="company-heading">
+                  <div>
+                    <h3>Банк «Центр-инвест»</h3>
+                    <p class="job-role">Java / Kotlin Developer</p>
+                  </div>
+                  <span class="job-domain">Банковские интеграции</span>
+                </div>
+                <div class="experience-description">
+                  <div class="experience-preview">
+                    <p>
+                      Проект: интеграционные модули банковских бизнес-процессов
+                      — сервис подачи заявок на кредитование и сервис оплаты по
+                      QR-коду, около 10 000 активных пользователей.
+                    </p>
+                    <p>Команда: 4 backend-разработчика, 2 QA и аналитик.</p>
+                  </div>
+                  <details class="experience-details">
+                    <summary>
+                      <span class="details-show">Подробнее</span
+                      ><span class="details-hide">Свернуть</span
+                      ><svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M12 5v14M5 12h14"></path>
+                      </svg>
+                    </summary>
+                    <div class="experience-detail-content">
+                      <h4>Задачи и результаты</h4>
+                      <ul class="result-list">
+                        <li>
+                          Внедрил механизмы целостности распределённых операций:
+                          Saga-координация, уникальные ключи транзакций в
+                          PostgreSQL, компенсационные действия и идемпотентные
+                          обработчики. После внедрения повторные и дублирующие
+                          кредитные заявки не фиксировались.
+                        </li>
+                        <li>
+                          Снизил потребление RAM с 8 ГБ до 800 МБ при генерации
+                          отчёта для ЦБ на примерно 1,5 млн строк. Заменил
+                          пакетную выгрузку через Hibernate на потоковый JDBC с
+                          fetchSize=1000, batch-лимитами и очисткой контекста.
+                          Устранил OOM; диагностику выполнял через JProfiler и
+                          heap dump.
+                        </li>
+                        <li>
+                          Сократил срок разработки типовых интеграций с 5 до 2
+                          дней: оформил внутренние библиотеки на RabbitMQ и
+                          Kafka как переиспользуемые Maven-модули.
+                        </li>
+                      </ul>
+                      <p class="experience-stack">
+                        <strong>Стек:</strong> Java 17, Kotlin, Spring Boot 2.7,
+                        PostgreSQL, Spring Data JPA/Hibernate, JDBC, Apache
+                        Kafka, RabbitMQ, JProfiler, Maven.
+                      </p>
+                    </div>
+                  </details>
+                </div>
+                <div class="tags">
+                  <span>Java 17</span><span>Kotlin</span><span>PostgreSQL</span
+                  ><span>RabbitMQ</span>
+                </div>
+              </div>
+            </article>
+            <article class="experience-row reveal">
+              <div class="experience-date">
+                <span class="timeline-node"></span
+                ><span>Июнь 2021 — январь 2023</span
+                ><span class="mono experience-number">03</span>
+              </div>
+              <div class="experience-main">
+                <div class="company-heading">
+                  <div>
+                    <h3>Inxeria Software</h3>
+                    <p class="job-role">Java Developer</p>
+                  </div>
+                  <span class="job-domain"
+                    >Ресторанные технологии · ExpressCheck</span
+                  >
+                </div>
+                <div class="experience-description">
+                  <div class="experience-preview">
+                    <p>
+                      Платформа обслуживала более 300 заведений и около 50 000
+                      транзакций в сутки.
+                    </p>
+                    <p>
+                      Команда: 6 backend-разработчиков, DevOps, QA и аналитик.
+                    </p>
+                  </div>
+                  <details class="experience-details">
+                    <summary>
+                      <span class="details-show">Подробнее</span
+                      ><span class="details-hide">Свернуть</span
+                      ><svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M12 5v14M5 12h14"></path>
+                      </svg>
+                    </summary>
+                    <div class="experience-detail-content">
+                      <h4>Задачи и результаты</h4>
+                      <ul class="result-list">
+                        <li>
+                          Повысил покрытие кода тестами с примерно 30% до 80%:
+                          unit-тесты на JUnit 5/Mockito и интеграционные тесты
+                          на Testcontainers. Число регрессионных багов на релиз
+                          сократилось с 10–12 до 2–3.
+                        </li>
+                        <li>
+                          Разработал адаптеры для интеграции с более чем 5
+                          типами ресторанных терминалов через REST API. Время
+                          подключения нового типа терминала сократилось с 2
+                          недель до 3 дней.
+                        </li>
+                        <li>
+                          Реализовал backend API для мобильного приложения
+                          CityCheers — около 20 000 загрузок.
+                        </li>
+                      </ul>
+                      <p class="experience-stack">
+                        <strong>Стек:</strong> Java 11, Spring Boot, PostgreSQL,
+                        Docker, REST API, JUnit 5, Mockito, Testcontainers,
+                        Kotlin.
+                      </p>
+                    </div>
+                  </details>
+                </div>
+                <div class="tags">
+                  <span>Java 11</span><span>Spring Boot</span><span>Docker</span
+                  ><span>Testcontainers</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section container projects-section"
+        id="projects"
+        data-section
+      >
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">03 / ПРОЕКТЫ</p>
+            <h2>Код, который работает в масштабе.</h2>
+          </div>
+          <p>Три домена. Реальные задачи. Измеримые изменения.</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card reveal featured-project">
+            <div class="project-body">
+              <p class="project-category mono">HEALTHCARE / HIGHLOAD</p>
+              <h3>ЕМИАС</h3>
+              <p class="project-description">
+                Микросервисы цифровой платформы здравоохранения Москвы.
+                Производительность, события и стабильные релизы.
+              </p>
+              <div class="project-metric">
+                <strong>2,4 → 0,9 с</strong
+                ><span>p95 эндпоинта сбора данных</span>
+              </div>
+              <div class="project-stack">
+                <span>Java 21</span><span>Kafka</span><span>Redis</span
+                ><span>Elasticsearch</span>
+              </div>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-body">
+              <p class="project-category mono">BANKING / INTEGRATIONS</p>
+              <h3>Центр-инвест</h3>
+              <p class="project-description">
+                Кредитные заявки, QR-платежи и банковская отчётность.
+                Целостность операций и эффективная работа с данными.
+              </p>
+              <div class="project-metric">
+                <strong>8 ГБ → 800 МБ</strong
+                ><span>RAM при генерации отчёта</span>
+              </div>
+              <div class="project-stack">
+                <span>Java</span><span>Kotlin</span><span>PostgreSQL</span
+                ><span>RabbitMQ</span>
+              </div>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-body">
+              <p class="project-category mono">RESTAURANT TECH / PAYMENTS</p>
+              <h3>ExpressCheck</h3>
+              <p class="project-description">
+                Платформа оплаты и управления заказами для ресторанов и кафе.
+                Интеграции с терминалами и надёжный API.
+              </p>
+              <div class="project-metric">
+                <strong>~30% → 80%</strong><span>покрытие кода тестами</span>
+              </div>
+              <div class="project-stack">
+                <span>Spring Boot</span><span>REST API</span><span>JUnit 5</span
+                ><span>Docker</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section
+        class="section container education-section"
+        id="education"
+        data-section
+      >
+        <div class="reveal">
+          <p class="eyebrow">04 / ОБРАЗОВАНИЕ</p>
+          <h2>Образование</h2>
+        </div>
+        <div class="education-content reveal">
+          <div class="education-school">
+            <div class="university-logo">
+              <img
+                src="../assets/images/university.webp"
+                alt="Южный университет (ИУБиП)"
+                loading="lazy"
+                decoding="async"
+                width="180"
+                height="180"
+              />
+            </div>
+            <div>
+              <h3>Южный университет (ИУБиП)</h3>
+              <p>Прикладная информатика · Бакалавриат</p>
+              <span>2022–2026 · Заочная форма</span>
+            </div>
+          </div>
+          <div class="language-info">
+            <span class="language-icon"
+              ><svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM3 12h18M12 3a18 18 0 0 1 0 18 18 18 0 0 1 0-18"
+                ></path></svg
+            ></span>
+            <div>
+              <h3>Языки</h3>
+              <p>Русский — родной</p>
+              <p>Английский — B2, Upper-Intermediate</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact-section" data-section>
+        <div class="container">
+          <div class="contact-top reveal">
+            <div>
+              <p class="eyebrow">05 / КОНТАКТЫ</p>
+              <h2>Обсудим вашу задачу?</h2>
+              <p class="contact-description">
+                Архитектура, производительность или новая команда — буду рад
+                знакомству.
+              </p>
+            </div>
+            <a
+              class="button button-primary"
+              href="https://t.me/andreyhpl"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="m22 3-4 18-7-6-4 4 1-7L22 3ZM8 12 2 9l20-6M8 12l10-6-7 9"
+                ></path></svg
+              >Написать в Telegram<svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M7 17 17 7M7 7h10v10"></path></svg
+            ></a>
+          </div>
+          <div class="contact-grid">
+            <div class="contact-item">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M3 5h18v14H3zM3 5l9 8 9-8"></path>
+              </svg>
+              <div>
+                <span>Почта</span
+                ><a href="mailto:andreyhpl@yandex.ru">andreyhpl@yandex.ru</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M22 16.9V20a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3.1a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"
+                ></path>
+              </svg>
+              <div>
+                <span>Телефоны</span>
+                <a href="tel:+995555598827">+995 555 59 88 27</a>
+                <a href="tel:+79001259871">+7 900 125 98 71</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0ZM15 10a3 3 0 1 1-6 0 3 3 0 0 1 6 0"
+                ></path>
+              </svg>
+              <div>
+                <span>Локация</span>
+                <p>Тбилиси, Грузия</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M9 19c-4.3 1.3-4.3-2.2-6-2.5M15 22v-3.4c.1-1-.3-1.7-.8-2.1 2.7-.3 5.5-1.3 5.5-6a4.7 4.7 0 0 0-1.3-3.3c.1-.3.6-1.6-.1-3.3 0 0-1-.3-3.4 1.3a11.7 11.7 0 0 0-6.2 0C6.3 3.6 5.3 4 5.3 4c-.7 1.7-.2 3-.1 3.3a4.7 4.7 0 0 0-1.3 3.3c0 4.7 2.8 5.7 5.5 6-.4.4-.8 1-.8 2.1V22"
+                ></path>
+              </svg>
+              <div>
+                <span>GitHub</span
+                ><a
+                  href="https://github.com/andrey-hpl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >andrey-hpl
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M7 17 17 7M7 7h10v10"></path></svg
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="container site-footer">
+      <a href="#home" class="footer-brand"
+        ><svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-15-2 18"></path></svg
+        ><span>© 2026 Андрей Хлыпало · Java Backend Developer</span></a
+      >
+      <nav aria-label="Навигация в подвале">
+        <a href="#about">Обо мне</a><a href="#projects">Проекты</a
+        ><a href="#contact">Контакты</a>
+      </nav>
+      <a class="back-top" href="#home"
+        >Наверх<svg
+          width="17"
+          height="17"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M12 20V4m-6 6 6-6 6 6"></path></svg
+      ></a>
+    </footer>
+  </body>
+</html>
